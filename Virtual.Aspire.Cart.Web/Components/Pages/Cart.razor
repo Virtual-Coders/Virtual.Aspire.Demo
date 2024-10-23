@@ -1,0 +1,41 @@
+﻿@page "/cart"
+@inject HttpClient Http
+@inject IConfiguration Configuration
+
+<h3>Your Cart</h3>
+
+@if (cart == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var item in cart.Items)
+        {
+            <li>@item.ProductId - Quantity: @item.Quantity</li>
+        }
+    </ul>
+}
+
+@code {
+    private CartModel cart;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cart = await Http.GetFromJsonAsync<CartModel>(Configuration["API"] + "cart/1");
+    }
+
+    public class CartModel
+    {
+        public int CartId { get; set; }
+        public List<CartItem> Items { get; set; }
+    }
+
+    public class CartItem
+    {
+        public int CartItemId { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+    }
+}

@@ -1,0 +1,78 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Virtual.Aspire.AppHost", "Virtual.Aspire.AppHost\Virtual.Aspire.AppHost.csproj", "{5A91F635-A936-445D-A9FA-3B7AA5D7463A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Virtual.Aspire.ServiceDefaults", "Virtual.Aspire.ServiceDefaults\Virtual.Aspire.ServiceDefaults.csproj", "{8FAD4BBE-3D9D-496B-ACE5-3A5C21EAD39B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.ProductService", "Virtual.Aspire.ProductService\Virtual.Aspire.ProductService.csproj", "{9083FDA7-AA31-4DAF-AE28-9FCC58A0E8FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.Product.Web", "Virtual.Aspire.Product.Web\Virtual.Aspire.Product.Web.csproj", "{3298A2AA-421F-4FEC-B75B-50976C1678AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.CartService", "Virtual.Aspire.CartService\Virtual.Aspire.CartService.csproj", "{019E7AA3-050B-40D2-AEEF-8C6077B0E920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.Cart.Web", "Virtual.Aspire.Cart.Web\Virtual.Aspire.Cart.Web.csproj", "{D4965DE4-E026-4E26-ACB0-465460185E85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.OrderService", "Virtual.Aspire.OrderService\Virtual.Aspire.OrderService.csproj", "{34E7A6F4-3E38-44F7-B5D7-88BA5E9DC2B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.Order.Web", "Virtual.Aspire.Order.Web\Virtual.Aspire.Order.Web.csproj", "{8EDAB7F3-BCDE-43C9-A4F2-C4481C20A23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.UserService", "Virtual.Aspire.UserService\Virtual.Aspire.UserService.csproj", "{A048C71D-72D3-47B6-8432-DBC785F3D174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual.Aspire.User.Web", "Virtual.Aspire.User.Web\Virtual.Aspire.User.Web.csproj", "{8A34BAFF-7F64-4107-8807-0ACBD8780C67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A91F635-A936-445D-A9FA-3B7AA5D7463A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A91F635-A936-445D-A9FA-3B7AA5D7463A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A91F635-A936-445D-A9FA-3B7AA5D7463A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A91F635-A936-445D-A9FA-3B7AA5D7463A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FAD4BBE-3D9D-496B-ACE5-3A5C21EAD39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FAD4BBE-3D9D-496B-ACE5-3A5C21EAD39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FAD4BBE-3D9D-496B-ACE5-3A5C21EAD39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FAD4BBE-3D9D-496B-ACE5-3A5C21EAD39B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9083FDA7-AA31-4DAF-AE28-9FCC58A0E8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9083FDA7-AA31-4DAF-AE28-9FCC58A0E8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9083FDA7-AA31-4DAF-AE28-9FCC58A0E8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9083FDA7-AA31-4DAF-AE28-9FCC58A0E8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3298A2AA-421F-4FEC-B75B-50976C1678AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3298A2AA-421F-4FEC-B75B-50976C1678AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3298A2AA-421F-4FEC-B75B-50976C1678AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3298A2AA-421F-4FEC-B75B-50976C1678AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019E7AA3-050B-40D2-AEEF-8C6077B0E920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019E7AA3-050B-40D2-AEEF-8C6077B0E920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019E7AA3-050B-40D2-AEEF-8C6077B0E920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019E7AA3-050B-40D2-AEEF-8C6077B0E920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4965DE4-E026-4E26-ACB0-465460185E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4965DE4-E026-4E26-ACB0-465460185E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4965DE4-E026-4E26-ACB0-465460185E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4965DE4-E026-4E26-ACB0-465460185E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E7A6F4-3E38-44F7-B5D7-88BA5E9DC2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E7A6F4-3E38-44F7-B5D7-88BA5E9DC2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E7A6F4-3E38-44F7-B5D7-88BA5E9DC2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E7A6F4-3E38-44F7-B5D7-88BA5E9DC2B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDAB7F3-BCDE-43C9-A4F2-C4481C20A23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDAB7F3-BCDE-43C9-A4F2-C4481C20A23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDAB7F3-BCDE-43C9-A4F2-C4481C20A23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDAB7F3-BCDE-43C9-A4F2-C4481C20A23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A048C71D-72D3-47B6-8432-DBC785F3D174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A048C71D-72D3-47B6-8432-DBC785F3D174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A048C71D-72D3-47B6-8432-DBC785F3D174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A048C71D-72D3-47B6-8432-DBC785F3D174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A34BAFF-7F64-4107-8807-0ACBD8780C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A34BAFF-7F64-4107-8807-0ACBD8780C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A34BAFF-7F64-4107-8807-0ACBD8780C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A34BAFF-7F64-4107-8807-0ACBD8780C67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {213AA4B5-5CF7-4412-B367-4D15C22D72FB}
+	EndGlobalSection
+EndGlobal

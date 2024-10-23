@@ -1,0 +1,42 @@
+﻿@page "/orders"
+@inject HttpClient Http
+@inject IConfiguration Configuration
+
+<h3>Order Summary</h3>
+
+@if (orders == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var order in orders)
+        {
+            <li>Order @order.OrderId - Date: @order.OrderDate</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Order> orders;
+
+    protected override async Task OnInitializedAsync()
+    {
+        orders = await Http.GetFromJsonAsync<List<Order>>(Configuration["API"] + "order/1");
+    }
+
+    public class Order
+    {
+        public int OrderId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public List<OrderItem> Items { get; set; }
+    }
+
+    public class OrderItem
+    {
+        public int OrderItemId { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+    }
+}

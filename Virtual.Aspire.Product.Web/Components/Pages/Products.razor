@@ -1,0 +1,39 @@
+﻿@page "/products"
+@inject HttpClient Http
+@inject IConfiguration Configuration
+
+<h3>Product List</h3>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    if (products.Count() == 0)
+    {
+        <p><em>No records found</em></p>
+    }
+    <ul>
+        @foreach (var product in products)
+        {
+            <li>@product.Name - $@product.Price</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<ProductModel> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<List<ProductModel>>(Configuration["API"] + "Product");
+    }
+
+    public class ProductModel
+    {
+        public int ProductId { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+    }
+}
